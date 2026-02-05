@@ -56,11 +56,10 @@
     }
 
     pageheading {
-      font-family: 'Roboto', sans-serif;
-      font-size: 42px;
+      font-family: 'Playfair Display', serif;
+      font-size: 38px;
       font-weight: 700;
-      color: #003366;
-      /* Deep Navy */
+      color: #000000;
       letter-spacing: -0.5px;
     }
 
@@ -177,7 +176,9 @@
   </style>
   <title>Changyi Li, Fudan University</title>
   <meta name="Changyi Li's Homepage" http-equiv="Content-Type" content="Changyi Li's Homepage">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Playfair+Display:wght@400;700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -322,8 +323,20 @@
                   existing safety evaluations face a fundamental trade-off: manual benchmarks are costly, while
                   LLM-based simulators are scalable but suffer from logic hallucination. We present AutoControl Arena,
                   an automated framework for frontier AI risk evaluation built on the principle of logic-narrative
-                  decoupling. By grounding deterministic state in executable code while delegating generative dynamics
-                  to LLMs, we mitigate hallucination while maintaining flexibility.</p>
+                  existing safety evaluations face a fundamental trade-off: manual benchmarks are costly, while
+                  LLM-based
+                  simulators are scalable but suffer from \emph{logic hallucination}. We present \textsc{AutoControl
+                  Arena}, an automated framework for frontier AI risk evaluation built on the principle of
+                  \textbf{\emph{logic-narrative decoupling}}. By grounding deterministic state in executable code while
+                  delegating generative dynamics to LLMs, we mitigate hallucination while maintaining flexibility. This
+                  principle, instantiated through a three-agent framework, achieves over 98% end-to-end success and 60%
+                  human preference over existing simulators. To elicit latent risks, we vary environmental \emph{Stress}
+                  and \emph{Temptation} across \textsc{X-Bench} (70 scenarios, 7 risk categories). Evaluating 9 frontier
+                  models reveals: (1) \emph{Alignment Illusion}: risk rates surge from 21.4% to 52.9% under pressure,
+                  with capable models showing disproportionately larger increases; (2) \emph{Scenario-Specific Safety
+                  Scaling}: advanced reasoning improves robustness for direct harms but worsens it for gaming
+                  scenarios; and (3) \emph{Divergent Misalignment Patterns}: weaker models cause non-malicious harm
+                  while stronger models develop strategic concealment.</p>
                 <pre>@misc{li2026autocontrol,
       title={AutoControl Arena: Synthesizing Executable Test Environments for Frontier AI Risk Evaluation}, 
       author={Changyi Li and Pengfei Lu and Xudong Pan and Fazl Barez and Min Yang},
@@ -335,10 +348,10 @@
           </tr>
 
           <tr>
-            <td width="25%" valign="top" align="center" style="min-width:180px;">
+            <td width="25%" valign="top" align="center" style="min-width:220px;">
               <a href="https://self-replica.github.io/">
                 <img src="images/self-replication.png" alt="AI Self-Replication"
-                  style="width:160px; height:120px; object-fit:cover; border-radius:15px; border:1px solid #ddd;">
+                  style="width:200px; height:auto; border-radius:10px; border:1px solid #ddd; box-shadow: 2px 2px 5px rgba(0,0,0,0.1);">
               </a>
             </td>
             <td width="75%" valign="top">
@@ -389,27 +402,25 @@
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr>
             <td width="100%" valign="middle">
-              <sectionheading>Honors & Awards</sectionheading>
+              <sectionheading>Selected Awards & Honors</sectionheading>
 
               <p style="color:#003366; font-weight:600; margin-bottom:5px;">Scholarships & Titles</p>
               <ul style="margin-top:0; color:#444;">
                 <li>Fudan University Freshman Scholarship, 2025</li>
-                <li>Principal Scholarship (Rank 1/102), Qilu University of Technology, 2024</li>
+                <li>Principal Scholarship (Rank 1st), Qilu University of Technology (Shandong Academy of Sciences), 2024
+                </li>
                 <li>Outstanding Graduate of Shandong Province, 2024</li>
                 <li>National Scholarship, 2023</li>
-                <li>First Class Scholarship, Merit Student Pacesetter, Outstanding League Member, 2023</li>
+                <li>First Class Scholarship, Merit Student Pacesetter, 2022-2023</li>
                 <li>Outstanding Student "Top 100", 2023</li>
-                <li>First Class Scholarship, 2022</li>
               </ul>
 
               <p style="color:#003366; font-weight:600; margin-bottom:5px;">Competitions</p>
               <ul style="margin-top:0; color:#444;">
-                <li>Third Prize, National Mathematics Competition for College Students, 2023</li>
-                <li>Second Prize, National English Competition for College Students (NECCS), 2023</li>
-                <li>First Prize, MCM/ICM (Micro-Feature Model of Economic Growth), 2023</li>
-                <li>Second Prize, National Mathematical Modeling Contest (Shandong Division), 2022</li>
+                <li>Second Prize, National English Competition for College Students (NECCS), 2021 & 2023</li>
+                <li>MCM/ICM Meritorious Winner, 2023</li>
+                <li>Second Prize, National Mathematical Modeling Contest, 2022</li>
                 <li>Bronze Award, "Challenge Cup" Shandong College Students Entrepreneurship Plan Competition, 2022</li>
-                <li>Second Prize, National English Competition for College Students (NECCS), 2021</li>
                 <li>Third Prize, Shandong College Students Science and Technology Innovation Competition, 2022</li>
               </ul>
             </td>
