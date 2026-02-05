@@ -5,7 +5,7 @@
   <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 2007), see www.w3.org">
   <style type="text/css">
     /* Theme: Deep Blue Professional */
-    /* Changed from Maroon (#800000) to Deep Navy Blue (#003366) and lighter Blue (#005ea6) */
+    /* Changed from Maroon (#800000) to Deep Navy Blue (#003366) and lighter Blue (#42659e) */
 
     /* Font: Changed from Titillium Web to Roboto/Open Sans style stack */
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
@@ -16,12 +16,12 @@
       font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       font-size: 16px;
       font-weight: 400;
-      color: #333;
+      color: #000;
       line-height: 1.6;
     }
 
     a {
-      color: #005ea6;
+      color: #42659e;
       /* Lighter blue for links */
       text-decoration: none;
       transition: color 0.2s;
@@ -99,7 +99,7 @@
       margin-bottom: 8px;
       background-color: #f8faff;
       /* Very light blue tint */
-      border-left: 3px solid #005ea6;
+      border-left: 3px solid #42659e;
       border-radius: 0 4px 4px 0;
       display: flex;
       align-items: baseline;
@@ -132,11 +132,11 @@
       /* Pill shaped buttons */
       font-size: 0.85em;
       font-weight: 500;
-      border: 1px solid #005ea6;
+      border: 1px solid #42659e;
     }
 
     .pub-button.primary {
-      background-color: #005ea6;
+      background-color: #42659e;
       color: white;
     }
 
@@ -148,7 +148,7 @@
 
     .pub-button.text {
       background-color: transparent;
-      color: #005ea6;
+      color: #42659e;
       border: 1px solid transparent;
     }
 
@@ -187,15 +187,16 @@
       <td>
 
         <!-- Bio Section -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" style="margin-top: 40px;">
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" style="margin-top: 40px;"
+          id="about">
           <tr>
             <td width="67%" valign="middle">
               <pageheading>Changyi Li (李长艺)</pageheading>
-              <p style="font-size: 1.1em; color: #555;">
+              <p style="font-size: 1.3em; color: #161616; font-weight: 700; margin-top: 10px; margin-bottom: 15px;">
                 PhD Student at Fudan University
               </p>
               <p>
-                I am a first-year PhD student in the <a href="https://secsys.fudan.edu.cn/">System Software and
+                I am an incoming PhD student in the <a href="https://secsys.fudan.edu.cn/">System Software and
                   Security Lab</a> at the <a href="https://cs.fudan.edu.cn/">School of Computer Science</a>, <a
                   href="https://www.fudan.edu.cn/">Fudan University</a>, advised by <a
                   href="https://ravensanstete.github.io/en/">Assoc. Prof. Xudong Pan</a> and <a
@@ -205,17 +206,20 @@
                 Previously, I received my Bachelor degree at <a href="https://www.qlu.edu.cn/">Qilu University of
                   Technology (Shandong Academy of Sciences)</a>, <strong>Rank 1/102</strong>.
               </p>
-              <p>
+              <p style="font-size: 1em; color: #000; margin-top: 15px; margin-bottom: 8px;">
                 <b>Research Interests:</b> AI Safety & Alignment
               </p>
 
-              <p style="margin-top: 20px;">
-                <a href="mailto:24212010017@m.fudan.edu.cn" style="margin-right: 15px;">Email</a>
-                <a href="CV.pdf" style="margin-right: 15px;">CV</a>
-                <a href="https://scholar.google.com/citations?user=AEIJU60AAAAJ&hl=zh-CN"
-                  style="margin-right: 15px;">Google Scholar</a>
-                <a href="https://github.com/CosmosYi" style="margin-right: 15px;">Github</a>
-                <a href="#" style="color: #FF2442; font-weight: 500;">📕 XiaoHongShu</a>
+              <p style="font-size: 1em; color: #000; margin-top: 15px; margin-bottom: 8px;">
+                <strong>Email:</strong> 24212010017 [at] m.fudan.edu.cn
+              </p>
+
+              <p style="margin-top: 8px; margin-bottom: 5px;">
+                [<a href="CV.pdf">CV</a>]
+                [<a href="mailto:24212010017@m.fudan.edu.cn">Email</a>]
+                [<a href="https://scholar.google.com/citations?user=AEIJU60AAAAJ&hl=zh-CN">Google Scholar</a>]
+                [<a href="https://github.com/CosmosYi">GitHub</a>]
+                <!-- [<a href="#" style="color: #FF2442;">XiaoHongShu</a>] -->
               </p>
             </td>
             <td width="33%" align="center" class="image-container">
@@ -223,6 +227,9 @@
             </td>
           </tr>
         </table>
+
+        <!-- Separator -->
+        <hr style="border: none; border-top: 1px solid #ddd; margin: 30px 0;">
 
         <!-- News Section -->
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
@@ -240,7 +247,7 @@
         </table>
 
         <!-- Publications Section -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" id="publications">
           <tr>
             <td width="100%">
               <sectionheading>Selected Publications</sectionheading>
@@ -253,7 +260,7 @@
             <td width="25%" valign="top" align="center" style="min-width:180px;">
               <a href="https://github.com/CosmosYi/ReasoningShield">
                 <img src="images/reasoningshield.png" alt="ReasoningShield"
-                  style="width:200px; height:auto; border-radius:10px; border:1px solid #ddd;">
+                  style="width:350px; height:auto; border-radius:10px; border:1px solid #ddd;">
               </a>
             </td>
             <td width="75%" valign="top">
@@ -301,7 +308,7 @@
             <td width="25%" valign="top" align="center" style="min-width:180px;">
               <a href="https://github.com/CosmosYi/AutoControl">
                 <img src="images/autocontrol-arena.png" alt="AutoControl Arena"
-                  style="width:200px; height:auto; border-radius:10px; border:1px solid #ddd;">
+                  style="width:350px; height:auto; border-radius:10px; border:1px solid #ddd;">
               </a>
             </td>
             <td width="75%" valign="top">
@@ -350,7 +357,7 @@
             <td width="25%" valign="top" align="center" style="min-width:220px;">
               <a href="https://self-replica.github.io/">
                 <img src="images/self-replication.png" alt="AI Self-Replication"
-                  style="width:200px; height:auto; border-radius:10px; border:1px solid #ddd;">
+                  style="width:350px; height:auto; border-radius:10px; border:1px solid #ddd;">
               </a>
             </td>
             <td width="75%" valign="top">
@@ -386,19 +393,20 @@
         </table>
 
         <!-- Teaching Section -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" id="teaching">
           <tr>
             <td width="100%" valign="middle">
               <sectionheading>Teaching</sectionheading>
               <ul style="line-height: 1.8;">
-                <li>Teaching Assistant, Fudan University, 2024</li>
+                <li>Deep Learning, Fudan University, 2025
+                </li>
               </ul>
             </td>
           </tr>
         </table>
 
         <!-- Honors Section -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" id="honors">
           <tr>
             <td width="100%" valign="middle">
               <sectionheading>Selected Awards & Honors</sectionheading>
@@ -406,8 +414,7 @@
               <p style="color:#003366; font-weight:600; margin-bottom:5px;">Scholarships & Titles</p>
               <ul style="margin-top:0; color:#444;">
                 <li>Fudan University Freshman Scholarship, 2025</li>
-                <li>🏆 <strong></strong>Principal Scholarship (Rank 1st)</strong>, Qilu University of Technology
-                  (Shandong Academy of Sciences), 2024
+                <li>🏆 <strong>Principal Scholarship</strong> (<strong>Rank 1st</strong>), 2024
                 </li>
                 <li>Outstanding Graduate of Shandong Province, 2024</li>
                 <li>🏆 <strong>National Scholarship</strong>, 2023</li>
@@ -453,7 +460,21 @@
         x.style.display = "none";
       }
     }
-    // define default hide logic if needed, or just rely on inline style
+
+    // Smooth scrolling for navigation links
+    document.addEventListener('DOMContentLoaded', function () {
+      const links = document.querySelectorAll('nav a[href^="#"]');
+      links.forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href').substring(1);
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+    });
   </script>
 </body>
 
