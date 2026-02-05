@@ -1,17 +1,38 @@
-# Ignore the contents of the _site directory and other cache directories
-_site/
+_site
+./_site
+# Ignore compiled and generated files
+node_modules/
+dist/
+build/
+*.log
+npm-debug.log*
+
+# Ignore local development files
+.env
+.DS_Store
+
+# Ignore backup folder
+trash_backup/
+
+# Ignore GitHub Pages generated site
+/_site/
+/.jekyll-cache/
+/.jekyll-metadata
+
+# Ignore Jekyll settings (Keep these if you want to reuse Jekyll logic later, but for now we are pure HTML)
+# /_config.yml
+# Gemfile
+# Gemfile.lock
+# .jekyll-cache/
+# .jekyll-metadata
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore other development tools
 .sass-cache/
+.jekyll-plugins/
+.jekyll-versions/
 
-# Ignore the directory for local files during development
-local/
-
-# Ignore the Gemfile that is generated
-Gemfile.lock
-
-# Ignore files created by npm
-node_modules
-package-lock.json
-
-# Ignore the vendor file and bundle for alternative installation
-vendor/
-.bundle/
+# Ignore test and documentation files
+/_tests/
