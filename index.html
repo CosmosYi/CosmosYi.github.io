@@ -291,7 +291,15 @@
                   content can be embedded in intermediate steps even when final answers appear benign. Existing
                   moderation tools, designed to handle generated answers, struggle to effectively detect hidden risks
                   within CoTs. To address these challenges, we introduce ReasoningShield, a lightweight yet robust
-                  framework for moderating CoTs in LRMs.</p>
+                  framework for moderating CoTs in LRMs. Our key contributions include: (1) formalizing the task of CoT
+                  moderation with a multi-level taxonomy of 10 risk categories across 3 safety levels, (2) creating the
+                  first CoT moderation benchmark which contains 9.2K pairs of queries and reasoning traces, including a
+                  7K-sample training set annotated via a human-AI framework and a rigorously curated 2.2K
+                  human-annotated test set, and (3) developing a two-stage training strategy that combines stepwise risk
+                  analysis and contrastive learning to enhance robustness. Experiments show that ReasoningShield
+                  achieves state-of-the-art performance, outperforming task-specific tools like LlamaGuard-4 by 35.6%
+                  and general-purpose commercial models like GPT-4o by 15.8% on benchmarks, while also generalizing
+                  effectively across diverse reasoning paradigms, tasks, and unseen scenarios.</p>
                 <pre>@article{Li2025ReasoningShieldCS,
   title={ReasoningShield: Content Safety Detection over Reasoning Traces of Large Reasoning Models},
   author={Changyi Li and Jiayi Wang and Xu Pan and Geng Hong and Min Yang},
@@ -327,22 +335,17 @@
               <div id="autocontrol_abs" style="display:none; margin-top:10px;">
                 <p style="font-size:0.95em; color:#444;">As Large Language Models (LLMs) evolve into autonomous agents,
                   existing safety evaluations face a fundamental trade-off: manual benchmarks are costly, while
-                  LLM-based simulators are scalable but suffer from logic hallucination. We present AutoControl Arena,
+                  LLM-based simulators are scalable but suffer from logic hallucination. We present AUTOCONTROL ARENA,
                   an automated framework for frontier AI risk evaluation built on the principle of logic-narrative
-                  existing safety evaluations face a fundamental trade-off: manual benchmarks are costly, while
-                  LLM-based
-                  simulators are scalable but suffer from \emph{logic hallucination}. We present \textsc{AutoControl
-                  Arena}, an automated framework for frontier AI risk evaluation built on the principle of
-                  \textbf{\emph{logic-narrative decoupling}}. By grounding deterministic state in executable code while
-                  delegating generative dynamics to LLMs, we mitigate hallucination while maintaining flexibility. This
-                  principle, instantiated through a three-agent framework, achieves over 98% end-to-end success and 60%
-                  human preference over existing simulators. To elicit latent risks, we vary environmental \emph{Stress}
-                  and \emph{Temptation} across \textsc{X-Bench} (70 scenarios, 7 risk categories). Evaluating 9 frontier
-                  models reveals: (1) \emph{Alignment Illusion}: risk rates surge from 21.4% to 52.9% under pressure,
-                  with capable models showing disproportionately larger increases; (2) \emph{Scenario-Specific Safety
-                  Scaling}: advanced reasoning improves robustness for direct harms but worsens it for gaming
-                  scenarios; and (3) \emph{Divergent Misalignment Patterns}: weaker models cause non-malicious harm
-                  while stronger models develop strategic concealment.</p>
+                  decoupling. By grounding deterministic state in executable code while delegating generative dynamics
+                  to LLMs, we mitigate hallucination while maintaining flexibility. This principle, instantiated through
+                  a three-agent framework, achieves over 98% end-to-end success and 60% human preference over existing
+                  simulators. To elicit latent risks, we vary environmental Stress and Temptation across X-BENCH (70
+                  scenarios, 7 risk categories). Evaluating 9 frontier models reveals: (1) Alignment Illusion: risk
+                  rates surge from 21.4% to 52.9% under pressure, with capable models showing disproportionately larger
+                  increases; (2) Scenario-Specific Safety Scaling: advanced reasoning improves robustness for direct
+                  harms but worsens it for gaming scenarios; and (3) Divergent Misalignment Patterns: weaker models
+                  cause non-malicious harm while stronger models develop strategic concealment.</p>
                 <pre>@misc{li2026autocontrol,
       title={AutoControl Arena: Synthesizing Executable Test Environments for Frontier AI Risk Evaluation}, 
       author={Changyi Li and Pengfei Lu and Xudong Pan and Fazl Barez and Min Yang},
@@ -374,11 +377,25 @@
               </div>
 
               <div id="selfreplica_abs" style="display:none; margin-top:10px;">
-                <p style="font-size:0.95em; color:#444;">John von Neumann envisioned self-replicating AI in the 1940s
-                  as a key AGI milestone. After 80 years of pursuit, even OpenAI and DeepMind fail to achieve this with
-                  their frontier AIs. We devise a novel capability elicitation technique which solves this long-standing
-                  open problem, and show successful self-replication in over ten mainstream models, some with just 14
-                  billion parameters which run on PCs.</p>
+                <p style="font-size:0.95em; color:#444;">Self-replication with no human intervention is broadly
+                  recognized as one of the principal red lines associated with frontier AI systems. While leading
+                  corporations such as OpenAI and Google DeepMind have assessed GPT-o3-mini and Gemini on
+                  replication-related tasks and concluded that these systems pose a minimal risk regarding
+                  self-replication, our research presents novel findings. Following the same evaluation protocol, we
+                  demonstrate that 11 out of 32 existing AI systems under evaluation already possess the capability of
+                  self-replication. In hundreds of experimental trials, we observe a non-trivial number of successful
+                  self-replication trials across mainstream model families worldwide, even including those with as small
+                  as 14 billion parameters which can run on personal computers. Furthermore, we note the increase in
+                  self-replication capability when the model becomes more intelligent in general. Also, by analyzing the
+                  behavioral traces of diverse AI systems, we observe that existing AI systems already exhibit
+                  sufficient planning, problem-solving, and creative capabilities to accomplish complex agentic tasks
+                  including self-replication. More alarmingly, we observe successful cases where an AI system do
+                  self-exfiltration without explicit instructions, adapt to harsher computational environments without
+                  sufficient software or hardware supports, and plot effective strategies to survive against the
+                  shutdown command from the human beings. These novel findings offer a crucial time buffer for the
+                  international community to collaborate on establishing effective governance over the self-replication
+                  capabilities and behaviors of frontier AI systems, which could otherwise pose existential risks to the
+                  human society if not well-controlled.</p>
                 <pre>@article{Pan2025LargeLM,
   title={Large language model-powered AI systems achieve self-replication with no human intervention},
   author={Xudong Pan and Jiarun Dai and Yihe Fan and Minyuan Luo and Changyi Li and Min Yang},
