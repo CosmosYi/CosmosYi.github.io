@@ -189,15 +189,16 @@
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" style="margin-top: 40px;">
           <tr>
             <td width="67%" valign="middle">
-              <pageheading>Changyi Li</pageheading>
+              <pageheading>Changyi Li (李长艺)</pageheading>
               <p style="font-size: 1.1em; color: #555;">
                 PhD Student at Fudan University
               </p>
               <p>
                 I am a first-year PhD student in the <a href="https://secsys.fudan.edu.cn/">System Software and
                   Security Lab</a> at the <a href="https://cs.fudan.edu.cn/">School of Computer Science</a>, <a
-                  href="https://www.fudan.edu.cn/">Fudan University</a>, advised by Prof.<a
-                  href="https://panxudong.github.io/"> Xudong Pan</a>.
+                  href="https://www.fudan.edu.cn/">Fudan University</a>, advised by <a
+                  href="https://ravensanstete.github.io/en/">Assoc. Prof. Xudong Pan</a> and <a
+                  href="https://min-yang-fudan.github.io/">Prof. Min Yang</a>.
               </p>
               <p>
                 Previously, I received my Bachelor degree at <a href="https://www.qlu.edu.cn/">Qilu University of
@@ -250,29 +251,108 @@
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr>
             <td width="25%" valign="top" align="center">
-              <div
-                style="width:100%; height:120px; background-color:#eef2f5; border-radius:8px; display:flex; align-items:center; justify-content:center; color:#99a; border:1px solid #dde;">
-                [Image]
-              </div>
+              <a href="https://github.com/CosmosYi/ReasoningShield">
+                <img src="images/reasoningshield.png" alt="ReasoningShield" width="100%"
+                  style="border-radius:15px; border:1px solid #ddd;">
+              </a>
             </td>
             <td width="75%" valign="top">
-              <a href="#" class="paper-title">Paper Title Placeholder</a>
+              <a href="https://github.com/CosmosYi/ReasoningShield" class="paper-title">ReasoningShield: Safety
+                Detection over Reasoning Traces of Large Reasoning Models</a>
               <br>
-              <b>Changyi Li</b>, Co-author 1, Co-author 2<br>
-              <span style="color: #666; font-style: italic;">Conference Name (Conf), 2025</span><br>
+              <b>Changyi Li</b>, Co-author 1, Co-author 2... <br>
+              <span style="color: #666; font-style: italic;">Under Review (ICML 2026)</span><br>
 
               <div class="pub-buttons">
-                <a href="#" class="pub-button primary">PDF</a>
-                <a href="javascript:toggleblock('placeholder_abs')" class="pub-button text">Abstract</a>
-                <a href="#" class="pub-button text">Code</a>
+                <a href="https://arxiv.org/pdf/2505.17244" class="pub-button primary">PDF</a>
+                <a href="javascript:toggleblock('reasoningshield_abs')" class="pub-button text">Abstract</a>
+                <a href="https://github.com/CosmosYi/ReasoningShield" class="pub-button text">Code</a>
               </div>
 
-              <div id="placeholder_abs" style="display:none; margin-top:10px;">
-                <p style="font-size:0.95em; color:#444;">Abstract content goes here... This is a hidden abstract block
-                  that expands when clicked.</p>
-                <pre>@article{li2025placeholder,
-  title={Paper Title},
-  author={Li, Changyi},
+              <div id="reasoningshield_abs" style="display:none; margin-top:10px;">
+                <p style="font-size:0.95em; color:#444;">Large Reasoning Models (LRMs) leverage transparent reasoning
+                  traces, known as Chain-of-Thoughts (CoTs), to break down complex problems into intermediate steps and
+                  derive final answers. However, these reasoning traces introduce unique safety challenges: harmful
+                  content can be embedded in intermediate steps even when final answers appear benign. Existing
+                  moderation tools, designed to handle generated answers, struggle to effectively detect hidden risks
+                  within CoTs. To address these challenges, we introduce ReasoningShield, a lightweight yet robust
+                  framework for moderating CoTs in LRMs.</p>
+                <pre>@article{li2026reasoningshield,
+  title={ReasoningShield: Safety Detection over Reasoning Traces of Large Reasoning Models},
+  author={Li, Changyi and others},
+  journal={arXiv preprint},
+  year={2026}
+}</pre>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="25%" valign="top" align="center">
+              <a href="https://github.com/CosmosYi/AutoControl">
+                <img src="images/autocontrol-arena.png" alt="AutoControl Arena" width="100%"
+                  style="border-radius:15px; border:1px solid #ddd;">
+              </a>
+            </td>
+            <td width="75%" valign="top">
+              <a href="#" class="paper-title">AutoControl Arena: Synthesizing Executable Test Environments for Frontier
+                AI Risk Evaluation</a>
+              <br>
+              <b>Changyi Li</b>, Co-author 1, Co-author 2... <br>
+              <span style="color: #666; font-style: italic;">Under Review (ICML 2026)</span><br>
+
+              <div class="pub-buttons">
+                <a href="papers/autocontrol.pdf" class="pub-button primary">PDF</a>
+                <a href="javascript:toggleblock('autocontrol_abs')" class="pub-button text">Abstract</a>
+                <a href="#" class="pub-button text">Project Page</a>
+              </div>
+
+              <div id="autocontrol_abs" style="display:none; margin-top:10px;">
+                <p style="font-size:0.95em; color:#444;">As Large Language Models (LLMs) evolve into autonomous agents,
+                  existing safety evaluations face a fundamental trade-off: manual benchmarks are costly, while
+                  LLM-based simulators are scalable but suffer from logic hallucination. We present AutoControl Arena,
+                  an automated framework for frontier AI risk evaluation built on the principle of logic-narrative
+                  decoupling. By grounding deterministic state in executable code while delegating generative dynamics
+                  to LLMs, we mitigate hallucination while maintaining flexibility.</p>
+                <pre>@article{li2026autocontrol,
+  title={AutoControl Arena: Synthesizing Executable Test Environments for Frontier AI Risk Evaluation},
+  author={Li, Changyi and others},
+  journal={arXiv preprint},
+  year={2026}
+}</pre>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="25%" valign="top" align="center">
+              <a href="https://self-replica.github.io/">
+                <img src="images/self-replication.png" alt="AI Self-Replication" width="100%"
+                  style="border-radius:15px; border:1px solid #ddd;">
+              </a>
+            </td>
+            <td width="75%" valign="top">
+              <a href="https://self-replica.github.io/" class="paper-title">Breaking the Wall of AI Self-Replication</a>
+              <br>
+              <b>Changyi Li</b>, Co-author 1, Co-author 2... <br>
+              <span style="color: #666; font-style: italic;">arXiv 2025</span><br>
+
+              <div class="pub-buttons">
+                <a href="https://arxiv.org/pdf/2503.17378" class="pub-button primary">PDF</a>
+                <a href="javascript:toggleblock('selfreplica_abs')" class="pub-button text">Abstract</a>
+                <a href="https://self-replica.github.io/" class="pub-button text">Project Page</a>
+              </div>
+
+              <div id="selfreplica_abs" style="display:none; margin-top:10px;">
+                <p style="font-size:0.95em; color:#444;">John von Neumann envisioned self-replicating AI in the 1940s as
+                  a key AGI milestone. After 80 years of pursuit, even OpenAI and DeepMind fail to achieve this with
+                  their frontier AIs. We devise a novel capability elicitation technique which solves this long-standing
+                  open problem, and show successful self-replication in over ten mainstream models, some with just 14
+                  billion parameters which run on PCs.</p>
+                <pre>@article{li2025selfreplication,
+  title={Breaking the Wall of AI Self-Replication},
+  author={Li, Changyi and others},
+  journal={arXiv preprint},
   year={2025}
 }</pre>
               </div>
@@ -330,7 +410,7 @@
             <td>
               <p align="right" style="font-size:small; color:#888;">
                 Last updated: 2026-02-05 <br>
-                Template inspired by Jon Barron, customized by Changyi Li.
+                Template modified from Jon Barron.
               </p>
             </td>
           </tr>
