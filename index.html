@@ -224,6 +224,56 @@
       font-size: 0.9em;
       overflow-x: auto;
     }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 800px) {
+      body {
+        padding: 0 15px;
+      }
+
+      .main-container {
+        width: 100% !important;
+        max-width: 900px !important;
+      }
+
+      /* Stack table layout vertically */
+      table,
+      tbody,
+      tr,
+      td {
+        display: block;
+        width: 100% !important;
+        box-sizing: border-box;
+      }
+
+      /* Reduce padding on mobile */
+      td[width="25%"],
+      td[width="75%"] {
+        padding: 10px 0 !important;
+      }
+
+      /* Center images in bio and publications sections */
+      .image-container img,
+      td[width="25%"] img {
+        margin: 0 auto 15px auto !important;
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+
+      table[id="about"] {
+        margin-top: 20px !important;
+      }
+
+      /* Refine spacing for elements */
+      pageheading {
+        font-size: 30px;
+      }
+
+      sectionheading {
+        font-size: 22px;
+      }
+    }
   </style>
   <title>Changyi Li, Fudan University</title>
   <meta name="Changyi Li's Homepage" http-equiv="Content-Type" content="Changyi Li's Homepage">
@@ -233,7 +283,8 @@
 </head>
 
 <body>
-  <table width="900" border="0" align="center" cellspacing="0" cellpadding="0"> <!-- Narrower width for cleaner look -->
+  <table class="main-container" width="100%" style="max-width: 900px;" border="0" align="center" cellspacing="0"
+    cellpadding="0"> <!-- Narrower width for cleaner look -->
     <tr>
       <td>
 
