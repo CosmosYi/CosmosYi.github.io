@@ -8,6 +8,10 @@
 
   <!-- SEO Meta Tags -->
   <title>Changyi Li (李长艺), Fudan University</title>
+  <!-- Favicon -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><path d=%22M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z%22/></svg>">
+
   <meta name="description"
     content="Changyi Li (李长艺) is a PhD student at Fudan University researching AI Safety and Alignment. Publications on ReasoningShield, AutoControl Arena, and AI Self-Replication.">
   <meta name="keywords"
@@ -60,17 +64,14 @@
 
   <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 2007), see www.w3.org">
   <style type="text/css">
-    /* Theme: Deep Blue Professional */
-    /* Changed from Maroon (#800000) to Deep Navy Blue (#003366) and lighter Blue (#42659e) */
-
-    /* Font: Changed from Titillium Web to Roboto/Open Sans style stack */
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+    /* Font: Advanced modern UI font - Inter */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
     body,
     td,
     th,
     p {
-      font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       font-size: 16px;
       font-weight: 400;
       color: #000;
@@ -92,14 +93,14 @@
 
     /* Headings */
     heading {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Inter', -apple-system, sans-serif;
       font-size: 18px;
       font-weight: 700;
       color: #1772d0;
     }
 
     h2.sectionheading {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Inter', -apple-system, sans-serif;
       font-size: 24px;
       font-weight: 700;
       color: #222;
@@ -316,10 +317,9 @@
               <a href="images/changyi.png"><img src="images/changyi.png" width="180" alt="Changyi Li"
                   style="margin-bottom: 15px; display: block; margin-left: auto; margin-right: auto;"></a>
               <p style="font-size: 0.95em; margin-top: 5px; margin-bottom: 5px; line-height: 1.8; text-align: center;">
-                | <a href="CV.pdf">CV</a> |
-                <a href="mailto:24212010017@m.fudan.edu.cn">Email</a> |<br>
-                | <a href="https://scholar.google.com/citations?user=AEIJU60AAAAJ&hl=zh-CN">Google Scholar</a> |
-                <a href="https://github.com/CosmosYi">GitHub</a> |
+                <a href="CV.pdf">CV</a> &nbsp;/&nbsp; <a href="mailto:24212010017@m.fudan.edu.cn">Email</a><br>
+                <a href="https://scholar.google.com/citations?user=AEIJU60AAAAJ&hl=zh-CN">Google Scholar</a>
+                &nbsp;/&nbsp; <a href="https://github.com/CosmosYi">GitHub</a>
               </p>
               <div style="display: flex; justify-content: center; gap: 4px; flex-wrap: wrap; margin-top: 8px;">
                 <a href="https://twitter.com/intent/follow?screen_name=ChangyiLi2002" title="Follow @ChangyiLi2002 on X"
@@ -380,6 +380,50 @@
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr>
             <td width="25%" valign="top" align="center" style="min-width:180px;">
+              <a href="https://github.com/CosmosYi/AutoControl">
+                <img src="images/autocontrol-arena.png" alt="AutoControl Arena"
+                  style="width:350px; height:auto; border-radius:10px; border:1px solid #ddd;">
+              </a>
+            </td>
+            <td width="75%" valign="top">
+              <a href="#" class="paper-title">AutoControl Arena: Synthesizing Executable Test Environments for Frontier
+                AI Risk Evaluation</a>
+              <br>
+              <b>Changyi Li</b>, Pengfei Lu, Xudong Pan, Fazl Barez, Min Yang<br>
+              <span style="color: #666; font-style: italic;">Under Review (ICML 2026)</span><br>
+
+              <div class="pub-buttons">
+                <a href="papers/autocontrol.pdf" class="pub-button primary">PDF</a>
+                <a href="javascript:toggleblock('autocontrol_abs')" class="pub-button text">Abstract</a>
+                <a href="https://cosmosyi.github.io/AutoControl-Arena/" class="pub-button text">Project Page</a>
+              </div>
+
+              <div id="autocontrol_abs" style="display:none; margin-top:10px;">
+                <p style="font-size:0.95em; color:#444;">As Large Language Models (LLMs) evolve into autonomous agents,
+                  existing safety evaluations face a fundamental trade-off: manual benchmarks are costly, while
+                  LLM-based simulators are scalable but suffer from logic hallucination. We present AUTOCONTROL ARENA,
+                  an automated framework for frontier AI risk evaluation built on the principle of logic-narrative
+                  decoupling. By grounding deterministic state in executable code while delegating generative dynamics
+                  to LLMs, we mitigate hallucination while maintaining flexibility. This principle, instantiated through
+                  a three-agent framework, achieves over 98% end-to-end success and 60% human preference over existing
+                  simulators. To elicit latent risks, we vary environmental Stress and Temptation across X-BENCH (70
+                  scenarios, 7 risk categories). Evaluating 9 frontier models reveals: (1) Alignment Illusion: risk
+                  rates surge from 21.4% to 52.9% under pressure, with capable models showing disproportionately larger
+                  increases; (2) Scenario-Specific Safety Scaling: advanced reasoning improves robustness for direct
+                  harms but worsens it for gaming scenarios; and (3) Divergent Misalignment Patterns: weaker models
+                  cause non-malicious harm while stronger models develop strategic concealment.</p>
+                <pre>@misc{li2026autocontrol,
+      title={AutoControl Arena: Synthesizing Executable Test Environments for Frontier AI Risk Evaluation}, 
+      author={Changyi Li and Pengfei Lu and Xudong Pan and Fazl Barez and Min Yang},
+      year={2026},
+      note={Under Review}
+}</pre>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td width="25%" valign="top" align="center" style="min-width:180px;">
               <a href="https://github.com/CosmosYi/ReasoningShield">
                 <img src="images/reasoningshield.png" alt="ReasoningShield"
                   style="width:350px; height:auto; border-radius:10px; border:1px solid #ddd;">
@@ -429,50 +473,6 @@
   year={2025},
   volume={abs/2505.17244},
   url={https://api.semanticscholar.org/CorpusID:278885996}
-}</pre>
-              </div>
-            </td>
-          </tr>
-
-          <tr>
-            <td width="25%" valign="top" align="center" style="min-width:180px;">
-              <a href="https://github.com/CosmosYi/AutoControl">
-                <img src="images/autocontrol-arena.png" alt="AutoControl Arena"
-                  style="width:350px; height:auto; border-radius:10px; border:1px solid #ddd;">
-              </a>
-            </td>
-            <td width="75%" valign="top">
-              <a href="#" class="paper-title">AutoControl Arena: Synthesizing Executable Test Environments for Frontier
-                AI Risk Evaluation</a>
-              <br>
-              <b>Changyi Li</b>, Pengfei Lu, Xudong Pan, Fazl Barez, Min Yang<br>
-              <span style="color: #666; font-style: italic;">Under Review (ICML 2026)</span><br>
-
-              <div class="pub-buttons">
-                <a href="papers/autocontrol.pdf" class="pub-button primary">PDF</a>
-                <a href="javascript:toggleblock('autocontrol_abs')" class="pub-button text">Abstract</a>
-                <a href="#" class="pub-button text">Project Page</a>
-              </div>
-
-              <div id="autocontrol_abs" style="display:none; margin-top:10px;">
-                <p style="font-size:0.95em; color:#444;">As Large Language Models (LLMs) evolve into autonomous agents,
-                  existing safety evaluations face a fundamental trade-off: manual benchmarks are costly, while
-                  LLM-based simulators are scalable but suffer from logic hallucination. We present AUTOCONTROL ARENA,
-                  an automated framework for frontier AI risk evaluation built on the principle of logic-narrative
-                  decoupling. By grounding deterministic state in executable code while delegating generative dynamics
-                  to LLMs, we mitigate hallucination while maintaining flexibility. This principle, instantiated through
-                  a three-agent framework, achieves over 98% end-to-end success and 60% human preference over existing
-                  simulators. To elicit latent risks, we vary environmental Stress and Temptation across X-BENCH (70
-                  scenarios, 7 risk categories). Evaluating 9 frontier models reveals: (1) Alignment Illusion: risk
-                  rates surge from 21.4% to 52.9% under pressure, with capable models showing disproportionately larger
-                  increases; (2) Scenario-Specific Safety Scaling: advanced reasoning improves robustness for direct
-                  harms but worsens it for gaming scenarios; and (3) Divergent Misalignment Patterns: weaker models
-                  cause non-malicious harm while stronger models develop strategic concealment.</p>
-                <pre>@misc{li2026autocontrol,
-      title={AutoControl Arena: Synthesizing Executable Test Environments for Frontier AI Risk Evaluation}, 
-      author={Changyi Li and Pengfei Lu and Xudong Pan and Fazl Barez and Min Yang},
-      year={2026},
-      note={Under Review}
 }</pre>
               </div>
             </td>
@@ -537,7 +537,7 @@
             <td width="100%" valign="middle">
               <h2 class="sectionheading" style="margin: 0;">Teaching</h2>
               <ul style="line-height: 1.8;">
-                <li>Deep Learning, Fudan University, 2025
+                <li>Deep Learning, Fudan University, 2025 Spring
                 </li>
               </ul>
             </td>
