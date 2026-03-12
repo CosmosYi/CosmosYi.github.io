@@ -1,0 +1,13 @@
+name: "IndexNow Ping"
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  ping-indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping IndexNow
+        run: curl "https://www.bing.com/indexnow?url=https://cosmosyi.github.io/&key=a7f9b8c2d4e1f5a6b0c3d7e8f9a1b2c3"
