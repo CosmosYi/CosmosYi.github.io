@@ -14,9 +14,9 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg?v=20260317-7">
 
   <meta name="description"
-    content="Changyi Li (李长艺) is a PhD student at Fudan University researching AI safety, alignment, and trustworthy AI systems, advised by Xudong Pan and Min Yang.">
+    content="Changyi Li (李长艺) is a PhD student at Fudan University researching AI safety, alignment, cybersecurity agents, and trustworthy AI systems, advised by Xudong Pan and Min Yang.">
   <meta name="keywords"
-    content="Changyi Li, 李长艺, Fudan University, AI Safety, AI Alignment, LLM Safety, ReasoningShield, AutoControl Arena, Machine Learning, Deep Learning, 复旦大学">
+    content="Changyi Li, 李长艺, Fudan University, AI Safety, AI Alignment, CyberEvolver, Cybersecurity Agents, LLM Safety, ReasoningShield, AutoControl Arena, Machine Learning, Deep Learning, 复旦大学">
   <meta name="author" content="Changyi Li">
   <meta name="robots" content="index, follow">
 
@@ -25,7 +25,7 @@
   <meta property="og:url" content="https://cosmosyi.github.io/">
   <meta property="og:title" content="Changyi Li (李长艺) | Fudan University | AI Safety & Alignment">
   <meta property="og:description"
-    content="PhD student researching AI Safety and Alignment at Fudan University. Publications on ReasoningShield, AutoControl Arena, and AI Self-Replication.">
+    content="PhD student researching AI Safety and Alignment at Fudan University. Publications on CyberEvolver, ReasoningShield, AutoControl Arena, and AI Self-Replication.">
   <meta property="og:site_name" content="Changyi Li's Homepage">
 
   <!-- Twitter Card Meta Tags -->
@@ -50,7 +50,7 @@
     "@context": "https://schema.org",
     "@type": "ProfilePage",
     "url": "https://cosmosyi.github.io/",
-    "dateModified": "2026-04-03T00:00:00+08:00",
+    "dateModified": "2026-06-06T00:00:00+08:00",
     "mainEntity": {
       "@id": "https://cosmosyi.github.io/#person",
       "@type": "Person",
@@ -58,7 +58,7 @@
       "alternateName": "李长艺",
       "url": "https://cosmosyi.github.io/",
       "mainEntityOfPage": "https://cosmosyi.github.io/",
-      "description": "PhD student at Fudan University researching AI safety, alignment, and trustworthy AI systems.",
+      "description": "PhD student at Fudan University researching AI safety, alignment, cybersecurity agents, and trustworthy AI systems.",
       "image": "https://cosmosyi.github.io/images/changyi.png",
       "jobTitle": "PhD Student",
       "affiliation": {
@@ -78,6 +78,7 @@
       "knowsAbout": [
         "AI Safety",
         "AI Alignment",
+        "Cybersecurity Agents",
         "Trustworthy AI",
         "Large Language Models",
         "AI Agent",
@@ -137,11 +138,17 @@
     }
 
     h1.pageheading {
-      font-family: 'Playfair Display', serif;
-      font-size: 38px;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 36px;
       font-weight: 700;
-      color: #000000;
-      letter-spacing: -0.5px;
+      color: #111;
+      letter-spacing: 0;
+      line-height: 1.15;
+      text-align: center;
+    }
+
+    .name-cjk {
+      font-family: "Times New Roman", Times, serif;
     }
 
     hr {
@@ -328,10 +335,7 @@
           id="about">
           <tr>
             <td width="75%" valign="middle">
-              <h1 class="pageheading" style="margin: 0;">Changyi Li (李长艺)</h1>
-              <p style="font-size: 1.3em; color: #161616; font-weight: 700; margin-top: 10px; margin-bottom: 15px;">
-                PhD Student at Fudan University
-              </p>
+              <h1 class="pageheading" style="margin: 0;"><span>Changyi Li</span> <span class="name-cjk">(李长艺)</span></h1>
               <p>
                 I am a incoming PhD student at the <a href="https://secsys.fudan.edu.cn/">System Software and
                   Security Lab</a>, <a href="https://cs.fudan.edu.cn/">School of Computer Science</a>, <a
@@ -375,7 +379,7 @@
                   </svg>
                 </a>
                 <!-- WeChat -->
-                <a href="#" title="WeChat ID: CosmicYi"
+                <a href="wechat.html" title="WeChat QR code and ID"
                   style="display: inline-flex; align-items: center; justify-content: center; background-color: #000; color: #fff; width: 28px; height: 28px; border-radius: 50%; text-decoration: none;">
                   <svg viewBox="0 0 576 512" style="width: 15px; height: 15px; fill: currentColor;">
                     <path
@@ -537,6 +541,66 @@
           </tr>
 
           <tr>
+            <td width="25%" valign="top" align="center" style="min-width:180px;">
+              <a href="https://pursuingf.github.io/CyberEvolver/">
+                <img src="images/cyberevolver.png" alt="CyberEvolver"
+                  style="width:350px; height:auto; border-radius:10px; border:1px solid #ddd;">
+              </a>
+            </td>
+            <td width="75%" valign="top">
+              <a href="https://pursuingf.github.io/CyberEvolver/" class="paper-title">CyberEvolver: Structured
+                Self-Evolution for Cybersecurity Agents On the Fly</a>
+              <br>
+              Yihe Fan, <b>Changyi Li</b>, Lichen Xu, Xudong Pan, Jiarun Dai, Hong Geng, Min Yang<br>
+              <span class="paper-venue">Submitted to NeurIPS 2026</span><br>
+
+              <div class="pub-buttons">
+                <a href="https://arxiv.org/pdf/2605.26195" class="pub-button primary">PDF</a>
+                <a href="javascript:toggleblock('cyberevolver_abs')" class="pub-button text">Abstract</a>
+                <a href="https://github.com/pursuingf/CyberEvolver" class="pub-button text"><svg viewBox="0 0 16 16"
+                    version="1.1" width="14" height="14" aria-hidden="true"
+                    style="vertical-align: text-bottom; margin-right: 4px; fill: currentColor;">
+                    <path fill-rule="evenodd"
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                    </path>
+                  </svg>Code</a>
+                <a href="https://pursuingf.github.io/CyberEvolver/" class="pub-button text"><svg viewBox="0 0 24 24"
+                    width="13" height="13" aria-hidden="true"
+                    style="vertical-align: text-bottom; margin-right: 4px; fill: currentColor;">
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                  </svg>Project Page</a>
+              </div>
+
+              <div id="cyberevolver_abs" style="display:none; margin-top:10px;">
+                <p style="font-size:0.95em; color:#444;">LLM-based agents are increasingly used for cybersecurity
+                  tasks, but most existing systems rely on fixed, human-designed scaffolds that struggle to adapt across
+                  diverse targets and failure modes. We introduce CyberEvolver, a self-evolving cybersecurity agent
+                  framework that iteratively revises its own scaffold based on experience from failed execution
+                  attempts. Self-evolution in cybersecurity is challenging because the space of possible scaffold
+                  changes is largely unstructured, execution feedback is sparse and often obscured by the environment,
+                  and low-diversity updates can cause errors to compound over repeated iterations. CyberEvolver
+                  addresses these challenges with a four-layer evolvable agent architecture that decomposes scaffold
+                  optimization into structured components, a trace-to-diagnosis mechanism that converts noisy execution
+                  logs into actionable revision signals, and a population-based beam search strategy that preserves
+                  diverse agent variants during evolution. We evaluate CyberEvolver on CTF challenges, vulnerability
+                  exploitation, and penetration-testing tasks using four open-source LLMs. Across these settings,
+                  CyberEvolver improves the seed agent's success rate by 13.6% on average, and outperforms six
+                  human-designed cybersecurity agents as well as two self-improvement methods adapted from other
+                  domains.</p>
+                <pre>@misc{fan2026cyberevolver,
+  title={CyberEvolver: Structured Self-Evolution for Cybersecurity Agents On the Fly},
+  author={Yihe Fan and Changyi Li and Lichen Xu and Xudong Pan and Jiarun Dai and Hong Geng and Min Yang},
+  year={2026},
+  eprint={2605.26195},
+  archivePrefix={arXiv},
+  primaryClass={cs.CR}
+}</pre>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
             <td width="25%" valign="top" align="center" style="min-width:220px;">
               <a href="https://self-replica.github.io/">
                 <img src="images/self-replication.png" alt="AI Self-Replication"
@@ -644,7 +708,7 @@
           <tr>
             <td>
               <p align="right" style="font-size:small; color:#888;">
-                Last updated: 2026-05-03 <br>
+                Last updated: 2026-06-06 <br>
                 Template modified from Jon Barron.
               </p>
             </td>
