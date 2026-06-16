@@ -242,6 +242,14 @@
       text-decoration: none;
     }
 
+    .hf-mark {
+      display: inline-block;
+      margin-right: 4px;
+      font-size: 0.95em;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
     /* Paper Title */
     .paper-title {
       font-size: 1.1em;
@@ -250,8 +258,8 @@
     }
 
     .paper-venue {
-      color: #111;
-      font-style: normal;
+      color: #666;
+      font-style: italic;
     }
 
     .paper-highlight {
@@ -432,17 +440,18 @@
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr>
             <td width="25%" valign="top" align="center" style="min-width:180px;">
-              <a href="https://github.com/CosmosYi/AutoControl">
+              <a href="https://cosmosyi.github.io/AutoControl-Arena/">
                 <img src="images/autocontrol-arena.png" alt="AutoControl Arena"
                   style="width:350px; height:auto; border-radius:10px; border:1px solid #ddd;">
               </a>
             </td>
             <td width="75%" valign="top">
-              <a href="#" class="paper-title">AutoControl Arena: Synthesizing Executable Test Environments for Frontier
+              <a href="https://cosmosyi.github.io/AutoControl-Arena/" class="paper-title">AutoControl Arena: Synthesizing Executable Test Environments for Frontier
                 AI Risk Evaluation</a>
               <br>
               <b>Changyi Li</b>, Pengfei Lu, Xudong Pan, Fazl Barez, Min Yang<br>
-              <span class="paper-venue">ICML, 2026 <span class="paper-highlight">(100+ GitHub Stars)</span></span><br>
+              <span class="paper-venue">ICML, 2026 <span class="paper-highlight">(<span data-live-metric="github-stars"
+                    data-github-repo="CosmosYi/AutoControl-Arena">100+</span> GitHub Stars)</span></span><br>
 
               <div class="pub-buttons">
                 <a href="https://arxiv.org/pdf/2603.07427" class="pub-button primary">PDF</a>
@@ -453,13 +462,13 @@
                     <path fill-rule="evenodd"
                       d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
                     </path>
-                  </svg>Code</a>
+                  </svg>GitHub</a>
                 <a href="https://cosmosyi.github.io/AutoControl-Arena/" class="pub-button text"><svg viewBox="0 0 24 24"
                     width="13" height="13" aria-hidden="true"
                     style="vertical-align: text-bottom; margin-right: 4px; fill: currentColor;">
                     <path
                       d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
-                  </svg>Project Page</a>
+                  </svg>Website</a>
               </div>
 
               <div id="autocontrol_abs" style="display:none; margin-top:10px;">
@@ -498,7 +507,11 @@
                 Detection over Reasoning Traces of Large Reasoning Models</a>
               <br>
               <b>Changyi Li</b>, Jiayi Wang, Xudong Pan, Geng Hong, Min Yang<br>
-              <span class="paper-venue">Submitted to NeurIPS 2026 <span class="paper-highlight">(1.5K+ HuggingFace downloads)</span></span><br>
+              <span class="paper-venue">Submitted to NeurIPS 2026 <span class="paper-highlight">(<span
+                    data-live-metric="hf-downloads"
+                    data-hf-models="ReasoningShield/ReasoningShield-1B,ReasoningShield/ReasoningShield-3B"
+                    data-hf-dataset="ReasoningShield/ReasoningShield-Dataset">1.5K+</span> HuggingFace
+                  downloads)</span></span><br>
 
               <div class="pub-buttons">
                 <a href="https://arxiv.org/pdf/2505.17244" class="pub-button primary">PDF</a>
@@ -509,7 +522,9 @@
                     <path fill-rule="evenodd"
                       d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
                     </path>
-                  </svg>Code</a>
+                  </svg>GitHub</a>
+                <a href="https://huggingface.co/ReasoningShield" class="pub-button text"><span class="hf-mark"
+                    aria-hidden="true">&#129303;</span>Hugging Face</a>
               </div>
 
               <div id="reasoningshield_abs" style="display:none; margin-top:10px;">
@@ -563,13 +578,13 @@
                     <path fill-rule="evenodd"
                       d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
                     </path>
-                  </svg>Code</a>
+                  </svg>GitHub</a>
                 <a href="https://pursuingf.github.io/CyberEvolver/" class="pub-button text"><svg viewBox="0 0 24 24"
                     width="13" height="13" aria-hidden="true"
                     style="vertical-align: text-bottom; margin-right: 4px; fill: currentColor;">
                     <path
                       d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
-                  </svg>Project Page</a>
+                  </svg>Website</a>
               </div>
 
               <div id="cyberevolver_abs" style="display:none; margin-top:10px;">
@@ -612,7 +627,7 @@
                 achieve self-replication with no human intervention</a>
               <br>
               Xudong Pan, Jiarun Dai, Yihe Fan, Minyuan Luo, <b>Changyi Li</b>, Min Yang<br>
-              <span style="color: #666; font-style: italic;">arXiv 2025</span><br>
+              <span class="paper-venue">arXiv 2025</span><br>
 
               <div class="pub-buttons">
                 <a href="https://arxiv.org/pdf/2503.17378" class="pub-button primary">PDF</a>
@@ -622,7 +637,7 @@
                     style="vertical-align: text-bottom; margin-right: 4px; fill: currentColor;">
                     <path
                       d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
-                  </svg>Project Page</a>
+                  </svg>Website</a>
               </div>
 
               <div id="selfreplica_abs" style="display:none; margin-top:10px;">
@@ -729,8 +744,104 @@
       }
     }
 
+    function formatLiveMetric(value) {
+      if (!Number.isFinite(value)) {
+        return null;
+      }
+
+      if (value >= 1000000) {
+        return (value / 1000000).toFixed(value >= 10000000 ? 0 : 1).replace(/\.0$/, '') + 'M';
+      }
+
+      if (value >= 1000) {
+        return (value / 1000).toFixed(value >= 10000 ? 0 : 1).replace(/\.0$/, '') + 'K';
+      }
+
+      return value.toLocaleString();
+    }
+
+    function metricIdPath(id) {
+      return id.split('/').map(encodeURIComponent).join('/');
+    }
+
+    async function fetchMetricJson(url) {
+      const response = await fetch(url, {
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error('Metric request failed');
+      }
+
+      return response.json();
+    }
+
+    async function updateGitHubStars(element) {
+      const repo = element.dataset.githubRepo;
+      if (!repo) {
+        return;
+      }
+
+      const data = await fetchMetricJson('https://api.github.com/repos/' + metricIdPath(repo));
+      const count = Number(data.stargazers_count);
+      const formatted = formatLiveMetric(count);
+      if (formatted) {
+        element.textContent = formatted;
+        element.parentElement.title = count.toLocaleString() + ' GitHub stars';
+      }
+    }
+
+    async function updateHuggingFaceDownloads(element) {
+      const modelIds = (element.dataset.hfModels || element.dataset.hfModel || '')
+        .split(',')
+        .map(function (id) {
+          return id.trim();
+        })
+        .filter(Boolean);
+      const ids = modelIds
+        .map(function (id) {
+          return 'https://huggingface.co/api/models/' + metricIdPath(id);
+        })
+        .concat(element.dataset.hfDataset
+          ? ['https://huggingface.co/api/datasets/' + metricIdPath(element.dataset.hfDataset)]
+          : []);
+
+      if (!ids.length) {
+        return;
+      }
+
+      const results = await Promise.all(ids.map(function (url) {
+        return fetchMetricJson(url).catch(function () {
+          return null;
+        });
+      }));
+      const total = results.reduce(function (sum, data) {
+        return sum + (data && Number.isFinite(Number(data.downloads)) ? Number(data.downloads) : 0);
+      }, 0);
+      const formatted = formatLiveMetric(total);
+
+      if (formatted && total > 0) {
+        element.textContent = formatted;
+        element.parentElement.title = total.toLocaleString() + ' Hugging Face downloads';
+      }
+    }
+
+    function updateLiveMetrics() {
+      document.querySelectorAll('[data-live-metric]').forEach(function (element) {
+        const metric = element.dataset.liveMetric;
+        const update = metric === 'github-stars' ? updateGitHubStars : updateHuggingFaceDownloads;
+        update(element).catch(function () {
+          // Keep the static fallback text when a public API is unavailable.
+        });
+      });
+    }
+
     // Smooth scrolling for navigation links
     document.addEventListener('DOMContentLoaded', function () {
+      updateLiveMetrics();
+
       const links = document.querySelectorAll('nav a[href^="#"]');
       links.forEach(link => {
         link.addEventListener('click', function (e) {
