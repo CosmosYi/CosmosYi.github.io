@@ -126,6 +126,24 @@
       text-decoration: underline;
     }
 
+    hr {
+      border: 0;
+      display: block;
+      height: 2px;
+      margin: 14px 0 6px;
+      background: linear-gradient(to right,
+          rgba(23, 114, 208, 0),
+          rgba(23, 114, 208, 0.16) 16%,
+          rgba(23, 114, 208, 0.54) 38%,
+          rgba(23, 114, 208, 0.54) 62%,
+          rgba(23, 114, 208, 0.16) 84%,
+          rgba(23, 114, 208, 0));
+    }
+
+    hr.bio-divider {
+      margin-top: 5px;
+    }
+
     /* Headings */
     heading {
       font-family: 'Inter', -apple-system, sans-serif;
@@ -136,13 +154,45 @@
 
     h2.sectionheading {
       font-family: 'Inter', -apple-system, sans-serif;
-      font-size: 24px;
+      font-size: 22px;
       font-weight: 700;
       color: #222;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 5px;
+      position: relative;
       display: inline-block;
-      margin-bottom: 10px;
+      padding-bottom: 5px;
+      margin: 0 0 9px;
+    }
+
+    h2.sectionheading::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(to right,
+          rgba(23, 114, 208, 0.46),
+          rgba(23, 114, 208, 0.16) 65%,
+          rgba(23, 114, 208, 0));
+    }
+
+    .section-table>tbody>tr>td {
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+
+    .section-table p:first-of-type,
+    .section-table ul:first-of-type {
+      margin-top: 0;
+    }
+
+    .publications-list>tbody>tr:first-child>td {
+      padding-top: 8px;
+    }
+
+    .news-table>tbody>tr>td {
+      padding-top: 8px;
+      padding-bottom: 12px;
     }
 
     h1.pageheading {
@@ -157,15 +207,6 @@
 
     .name-cjk {
       font-family: "Times New Roman", Times, serif;
-    }
-
-    hr {
-      border: 0;
-      height: 1px;
-      background-image: none;
-      background-color: #ddd;
-      /* Subtle grey lines */
-      margin: 20px 0;
     }
 
     strong,
@@ -186,7 +227,7 @@
 
     /* News Items */
     .news-container {
-      margin-top: 20px;
+      margin-top: 0;
     }
 
     .news-item {
@@ -361,11 +402,20 @@
                   href="https://secsys.fudan.edu.cn/">System Software and Security Lab</a>, <a
                   href="https://cs.fudan.edu.cn/">School of Computer Science</a>.
               </p>
+              <!--
               <p>
                 My research focuses on building capable, safe and trustworthy AI systems. Broadly, I explore two
                 complementary directions: (1) developing learning and optimization methods that strengthen model
                 competence and generalization, and (2) designing evaluation and alignment approaches that make advanced
                 AI systems safer, more controllable, and better grounded in human values and knowledge.
+              </p>
+              -->
+              <p>
+                My research focuses on safety, alignment, and capability development for frontier AI systems. I study
+                reliability, trustworthiness, and controllability issues that arise as large models and agents tackle
+                increasingly complex tasks and expand their capability boundaries. My current work focuses on scalable
+                oversight and automated risk evaluation for advanced AI systems, as well as self-improving agent systems
+                that learn from experience.
               </p>
               <p style="font-size: 1em; color: #000; margin-top: 15px; margin-bottom: 8px;">
                 <strong>Email:</strong> 24212010017 [AT] m.fudan.edu.cn
@@ -421,37 +471,43 @@
         </table>
 
         <!-- Separator -->
-        <hr style="border: none; border-top: 1px solid #ddd; margin: 30px 0;">
+        <hr class="bio-divider">
 
         <!-- News Section -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <table class="news-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
           <tr>
             <td width="100%" valign="middle">
-              <h2 class="sectionheading" style="margin: 0;">News</h2>
+              <h2 class="sectionheading">News</h2>
               <div class="news-container">
                 <div class="news-item">
+                  <span class="news-date">Jul 2026</span>
+                  <span class="news-content">Invited to attend the <strong><a href="https://openai.com/">OpenAI</a></strong> Safety & Alignment Mixer and the <a href="https://far.ai/events/event-list/seoul-alignment-workshop-2026">Seoul Alignment Workshop</a> hosted by <strong><a href="https://far.ai/">FAR.AI</a></strong>, co-located with <strong><a href="https://icml.cc/">ICML 2026</a></strong> in Seoul.</span>
+                </div>
+                <div class="news-item">
                   <span class="news-date">Jun 2026</span>
-                  <span class="news-content">Admitted to a co-supervised PhD program with Shanghai Innovation Institute (SII).</span>
+                  <span class="news-content">Admitted to a co-supervised PhD program with <a href="https://www.sii.edu.cn/">Shanghai Innovation Institute (SII)</a>.</span>
                 </div>
                 <div class="news-item">
                   <span class="news-date">May 2026</span>
-                  <span class="news-content">AutoControl Arena was accepted to ICML 2026.</span>
+                  <span class="news-content"><a href="https://cosmosyi.github.io/AutoControl-Arena/">AutoControl Arena</a> was accepted to <strong><a href="https://icml.cc/">ICML 2026</a></strong>.</span>
                 </div>
               </div>
             </td>
           </tr>
         </table>
 
+        <hr>
+
         <!-- Publications Section -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" id="publications">
+        <table class="section-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="10" id="publications">
           <tr>
             <td width="100%">
-              <h2 class="sectionheading" style="margin: 0;">Selected Publications</h2>
+              <h2 class="sectionheading">Selected Publications</h2>
             </td>
           </tr>
         </table>
 
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <table class="publications-list" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr>
             <td width="25%" valign="top" align="center" style="min-width:180px;">
               <a href="https://cosmosyi.github.io/AutoControl-Arena/">
@@ -683,11 +739,13 @@
           </tr>
         </table>
 
+        <hr>
+
         <!-- Honors Section -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" id="honors">
+        <table class="section-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="10" id="honors">
           <tr>
             <td width="100%" valign="middle">
-              <h2 class="sectionheading" style="margin: 0;">Selected Awards & Honors</h2>
+              <h2 class="sectionheading">Selected Awards & Honors</h2>
 
               <p style="color:#1772d0; font-size:1.15em; font-weight:700; margin-bottom:5px;">Scholarships & Distinctions</p>
               <ul style="margin-top:0; color:#444;">
@@ -695,7 +753,7 @@
                 <li>Freshman Scholarship, Fudan University, 2025</li>
                 <li>🏆 <strong>Principal Scholarship</strong> (<strong>University-wide Rank 1st</strong>), 2024
                 </li>
-                <li>Outstanding Graduate of Shandong Province, 2024</li>
+                <li>🏆 <strong>Provincial Outstanding Graduate</strong>, 2024</li>
                 <li>🏆 <strong>National Scholarship</strong>, 2023</li>
                 <li>Outstanding Student "Top 100", 2023</li>
                 <li>First-Class Scholarship, Merit Student Pacesetter, 2022-2023</li>
@@ -706,21 +764,25 @@
               <ul style="margin-top:0; color:#444;">
                 <li>Meritorious Winner, Mathematical Contest in Modeling (MCM), 2023</li>
                 <li>Second Prize, China Undergraduate Mathematical Contest in Modeling (CUMCM), 2022</li>
-                <li>Bronze Award, "The Challenge Cup", 2022</li>
-                <li>Second Prize, National English Competition for College Students (NECCS), 2021 & 2023</li>
+                <li>Bronze Award, "The Challenge Cup" Competition, 2022</li>
               </ul>
             </td>
           </tr>
         </table>
 
-        <!-- Teaching Section -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" id="teaching">
+        <hr>
+
+        <!-- Academic Service Section -->
+        <table class="section-table" width="100%" align="center" border="0" cellspacing="0" cellpadding="10" id="service">
           <tr>
             <td width="100%" valign="middle">
-              <h2 class="sectionheading" style="margin: 0;">Teaching</h2>
+              <h2 class="sectionheading">Academic Service</h2>
               <ul style="line-height: 1.8;">
-                <li>Teaching Assistant, Fundamentals of Deep Learning, Fudan University, Spring 2026</li>
-                <li>Teaching Assistant, Fundamentals of Deep Learning, Fudan University, Spring 2025</li>
+                <li><strong>Invited Talk</strong>, Seoul Alignment Workshop: Frontier AI Safety Evaluation, FAR.AI, 2026</li>
+                <li><strong>Organizer</strong>, AI Deception Workshop, Fudan &amp; SAIF &amp; Concordia AI, 2025 <a
+                    href="https://mp.weixin.qq.com/s/YgtfCAohzxcmUeGm8j6nBQ">[Link]</a></li>
+                <li><strong>Teaching Assistant</strong>, Fundamentals of Deep Learning, Fudan University, Spring 2026</li>
+                <li><strong>Teaching Assistant</strong>, Fundamentals of Deep Learning, Fudan University, Spring 2025</li>
               </ul>
             </td>
           </tr>
@@ -732,7 +794,7 @@
           <tr>
             <td>
               <p align="right" style="font-size:small; color:#888;">
-                Last updated: 2026-06-18 <br>
+                Last updated: 2026-06-24 <br>
                 Template modified from Jon Barron.
               </p>
             </td>
