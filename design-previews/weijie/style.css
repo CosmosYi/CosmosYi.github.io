@@ -22,10 +22,10 @@ h3 { font-size:110%; }
 #navbar .nav-container { display:flex; align-items:center; gap:20px; max-width:960px; margin:0 auto; padding:10px 50px; }
 #navbar a { color:#224b8d; font-weight:600; white-space:nowrap; }
 #navbar a:hover { text-decoration:none; }
-#navbar .nav-brand { padding-bottom:2px; border-bottom:2px solid #224b8d; color:#1a1a1a; }
+#navbar .nav-brand { padding-bottom:2px; border-bottom:2px solid transparent; color:#1a1a1a; }
 #navbar .nav-links { display:flex; align-items:center; gap:20px; }
 #navbar .nav-links a { padding-bottom:2px; border-bottom:2px solid transparent; transition:border-color .2s ease,color .2s ease; }
-#navbar .nav-links a[aria-current="page"] { color:#224b8d; border-bottom-color:transparent; }
+#navbar a[aria-current="page"] { color:#1a1a1a; border-bottom-color:#224b8d; }
 #navbar .nav-links a:hover,#navbar .nav-links a:focus-visible { border-bottom-color:#224b8d; }
 #navbar .last-updated { display:flex; align-items:center; margin-left:auto; color:#666; font-size:12px; line-height:1; white-space:nowrap; }
 .nav-toggle { display:none; flex-direction:column; gap:5px; padding:4px; border:0; background:none; cursor:pointer; }
