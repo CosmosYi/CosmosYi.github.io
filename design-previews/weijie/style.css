@@ -1,0 +1,47 @@
+/* High-fidelity adaptation of the live Jemdoc presentation at weijiemax.github.io. */
+html { background-color:#eee; }
+body { max-width:960px; margin:30px auto; padding:10px 50px 30px; color:#000; background:#fff; font-family:Georgia,serif; text-align:left; }
+* { box-sizing:border-box; }
+a { color:#224b8d; text-decoration:none; }
+a:hover { border-bottom:1px dotted gray; }
+p { margin:0 0 .8em; padding:0; line-height:1.3; }
+h1,h2,h3 { margin:.7em 0 .5em; padding:.5em 0 .2em; color:#527bbd; border-bottom:1px solid #aaa; line-height:1; font-weight:bold; }
+h1 { padding-bottom:.3em; font-size:165%; }
+h2 { padding-top:.8em; font-size:125%; }
+h3 { border-bottom:0; font-size:110%; }
+ul { margin:.2em 0 .8em; padding-top:0; list-style-position:outside; list-style-type:square; }
+li { margin-top:.9em; }
+.topline { display:flex; justify-content:flex-end; gap:18px; margin:0 0 16px; color:#527bbd; font-size:14px; }
+.topline a[aria-current="page"] { color:#022b6d; border-bottom:1px solid gray; }
+.profile { width:100%; border-collapse:collapse; }
+.profile td:first-child { padding-right:32px; }
+.profile-photo { display:block; width:220px; height:293px; object-fit:cover; object-position:center top; }
+.name { margin:0 0 14px; padding:0; color:#000; border:0; font-size:210%; }
+.meta { line-height:1.55; }
+.links { line-height:1.7; }
+.news { padding-left:22px; }
+.news time { display:inline-block; width:80px; color:#555; }
+.paper { display:grid; grid-template-columns:180px 1fr; gap:22px; align-items:start; margin:18px 0 28px; }
+.paper img { width:180px; max-height:125px; object-fit:contain; border:1px solid #ddd; }
+.paper-title { font-weight:bold; line-height:1.3; }
+.paper p { font-size:94%; }
+.post-list { margin:0; padding:0; list-style:none; }
+.post-list li { display:grid; grid-template-columns:105px 1fr; gap:16px; margin:0; padding:17px 0; border-bottom:1px solid #ddd; }
+.post-list time { color:#666; font-size:85%; }
+.post-list h3 { margin:0 0 7px; padding:0; border:0; color:#224b8d; }
+.post-list p { font-size:92%; }
+.post-title { color:#527bbd; }
+.post-meta { color:#666; font-size:90%; }
+.post-content { max-width:720px; }
+.post-content p { line-height:1.55; }
+.note { padding:12px 15px; border:1px solid #cfcfcf; background:#f6f6f6; }
+.footer { margin-top:4em; padding-top:.3em; color:#aaa; border-top:1px solid #c0c0c0; font-size:small; }
+@media(max-width:650px){
+  body { margin:0; padding:18px 22px 28px; }
+  .profile,.profile tbody,.profile tr,.profile td { display:block; width:100%; }
+  .profile td:first-child { padding-right:0; }
+  .profile td:last-child { padding-top:15px; }
+  .profile-photo { width:180px; height:240px; }
+  .paper { grid-template-columns:1fr; }
+  .post-list li { grid-template-columns:1fr; gap:4px; }
+}
