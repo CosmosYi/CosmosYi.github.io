@@ -71,8 +71,10 @@ h3 { font-size:110%; }
 .paper-venue { margin-bottom:3px; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; font-style:italic; font-weight:600; }
 .venue-highlight { display:inline-block; margin-left:7px; padding:2px 8px; color:#fff; border-radius:4px; background:linear-gradient(135deg,#8b0012 0%,#c83e4d 100%); box-shadow:0 2px 6px rgba(139,0,18,.28); font-size:12px; font-style:normal; font-weight:700; letter-spacing:.2px; vertical-align:1px; }
 .review-note { margin:-1px 0 3px; color:#555; font-size:88%; font-style:italic; font-weight:400; }
-.publication-links { color:#333; font-size:100%; line-height:1.5; }
+.publication-links { color:#333; font-size:16px; line-height:1.2; }
 .publication-links a { color:#0066cc; font-weight:400; white-space:nowrap; }
+.bibtex-trigger { display:inline; margin:0; padding:0; color:#0066cc; border:0; background:none; font:inherit; font-weight:400; line-height:inherit; cursor:pointer; white-space:nowrap; }
+.bibtex-trigger:hover { text-decoration:underline; }
 .repo-stars { display:inline-flex; align-items:center; gap:3px; margin-left:6px; padding:0 5px; color:#666!important; border:1px solid #d8d8d8; border-radius:3px; background:#f5f5f5; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; font-size:80%; font-variant-numeric:tabular-nums; line-height:1.45; text-decoration:none!important; white-space:nowrap; vertical-align:1px; }
 .repo-stars:hover { color:#333!important; border-color:#bbb; background:#eee; }
 .repo-stars__icon { color:inherit; }
@@ -92,6 +94,24 @@ h3 { font-size:110%; }
 .post-content { max-width:720px; }
 .post-content p { line-height:1.55; }
 .note { padding:12px 15px; border:1px solid #cfcfcf; background:#f6f6f6; }
+
+.modal-open { overflow:hidden; }
+.bibtex-modal { position:fixed; z-index:2000; inset:0; display:flex; align-items:flex-start; justify-content:center; padding:5vh 20px; background:rgba(0,0,0,.5); animation:bibtex-fade-in .3s ease-out; }
+.bibtex-modal-content { position:relative; width:min(800px,80vw); max-height:80vh; padding:20px; overflow-y:auto; border-radius:8px; background:#fff; box-shadow:0 4px 20px rgba(0,0,0,.3); animation:bibtex-slide-in .3s ease-out; }
+.bibtex-modal-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:20px; padding-bottom:15px; border-bottom:1px solid #eee; }
+.bibtex-modal-header h3 { margin:0; padding:0; border:0; color:#333; font-size:24px; }
+.bibtex-close { display:flex; align-items:center; justify-content:center; width:40px; height:40px; padding:0; color:#1a1a1a; border:0; border-radius:50%; background:#f0f0f0; font-family:Arial,sans-serif; font-size:24px; line-height:1; cursor:pointer; transition:background .2s ease,transform .2s ease; }
+.bibtex-close:hover { background:#e0e0e0; transform:scale(1.08); }
+.bibtex-content { min-height:150px; margin:0 0 12px; padding:20px; overflow-x:auto; color:#495057; border:1px solid #e9ecef; border-radius:6px; background:#f8f9fa; font-family:Monaco,Menlo,"Ubuntu Mono",Consolas,monospace; font-size:14px; line-height:1.5; white-space:pre-wrap; }
+.bibtex-status { min-height:1.45em; margin:0 0 8px; color:#666; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; font-size:13px; text-align:right; }
+.bibtex-actions { display:flex; justify-content:flex-end; gap:12px; }
+.bibtex-copy-btn,.bibtex-download-btn { padding:10px 20px; color:#fff; border:0; border-radius:6px; background:#2c5aa0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; font-size:14px; font-weight:500; cursor:pointer; transition:background .2s ease,box-shadow .2s ease,transform .2s ease; }
+.bibtex-copy-btn:hover,.bibtex-download-btn:hover { background:#1e3f73; box-shadow:0 2px 8px rgba(0,0,0,.15); transform:translateY(-1px); }
+.bibtex-download-btn { background:#6c757d; }
+.bibtex-download-btn:hover { background:#545b62; }
+.bibtex-copy-btn.copy-success { background:#28a745; }
+@keyframes bibtex-fade-in { from { opacity:0; } to { opacity:1; } }
+@keyframes bibtex-slide-in { from { opacity:0; transform:translateY(-50px); } to { opacity:1; transform:translateY(0); } }
 
 @media(min-width:701px){
   html { scrollbar-gutter:stable; }
@@ -121,6 +141,14 @@ h3 { font-size:110%; }
   .dated-list li { gap:9px; padding-left:14px; }
   .dated-list time { flex-basis:84px; }
   .post-list li { grid-template-columns:1fr; gap:4px; }
+  .bibtex-modal { align-items:center; padding:16px; }
+  .bibtex-modal-content { width:100%; max-height:calc(100vh - 32px); padding:16px; }
+  .bibtex-modal-header h3 { font-size:20px; }
+  .bibtex-content { padding:14px; font-size:12px; }
+}
+
+@media(prefers-reduced-motion:reduce){
+  .bibtex-modal,.bibtex-modal-content { animation:none; }
 }
 
 @media(max-width:390px){
