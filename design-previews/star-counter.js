@@ -30,6 +30,15 @@
     }
   }
 
+  function renderCount(element, count, repo) {
+    var label = count.toLocaleString() + ' GitHub stars';
+    element.querySelector('.stars-count').textContent = format(count);
+    element.title = label;
+    if (element.classList.contains('repo-stars')) {
+      element.setAttribute('aria-label', label + ' for ' + repo.split('/').pop());
+    }
+  }
+
   document.querySelectorAll('[data-repo]').forEach(function (element) {
     var repo = element.getAttribute('data-repo');
     var count = element.querySelector('.stars-count');
@@ -38,7 +47,7 @@
     var cacheKey = 'gh-stars:' + repo;
     var cached = readCache(cacheKey);
     if (cached !== null) {
-      count.textContent = format(cached);
+      renderCount(element, cached, repo);
       element.setAttribute('data-loaded', 'cache');
       return;
     }
@@ -53,9 +62,8 @@
       .then(function (data) {
         if (typeof data.stargazers_count !== 'number') throw new Error('Invalid Star count');
         writeCache(cacheKey, data.stargazers_count);
-        count.textContent = format(data.stargazers_count);
+        renderCount(element, data.stargazers_count, repo);
         element.setAttribute('data-loaded', 'live');
-        element.title = data.stargazers_count.toLocaleString() + ' GitHub stars';
       })
       .catch(function () {
         element.setAttribute('data-loaded', 'fallback');

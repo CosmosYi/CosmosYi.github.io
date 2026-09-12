@@ -2,14 +2,14 @@
   document.documentElement.classList.add('js');
 
   const controls = [...document.querySelectorAll('[data-publication-view]')];
-  const fullOnly = [...document.querySelectorAll('[data-publication="full"]')];
+  const publications = [...document.querySelectorAll('.publication-container[data-tags]')];
   const navToggle = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.nav-links');
 
   function setPublicationView(view) {
-    const showFull = view === 'full';
-    fullOnly.forEach((publication) => {
-      publication.hidden = !showFull;
+    publications.forEach((publication) => {
+      const tags = publication.dataset.tags.split(/\s+/);
+      publication.hidden = view !== 'selected' && !tags.includes(view);
     });
     controls.forEach((control) => {
       const active = control.dataset.publicationView === view;
