@@ -42,6 +42,8 @@ img { max-width:100%; vertical-align:middle; }
 .paper-button-pdf { color:#dc2626!important; border:1px solid #fecaca; background:#fee2e2; }
 .paper-button-github { color:#495057!important; border:1px solid #dee2e6; background:#f8f9fa; }
 .paper-button-project { color:#0284c7!important; border:1px solid #e0f2fe; background:#f0f9ff; }
+.button-stars { display:inline-flex; align-items:center; gap:2px; margin-left:2px; padding-left:5px; border-left:1px solid #ced4da; font-variant-numeric:tabular-nums; }
+.button-stars__icon { color:#b8860b; }
 .paper[hidden] { display:none; }
 .post-list { margin-left:0; list-style:none; }
 .post-list > li { margin-bottom:30px; }
