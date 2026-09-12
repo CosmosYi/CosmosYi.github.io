@@ -11,6 +11,8 @@ Refine only the A (`design-previews/weijie`) homepage. Preserve the current typo
 - Keep this information order: name, `Ph.D. Student`, institutions, `Shanghai, China`, email, social icons.
 - Render `Shanghai, China` on its own line immediately below the institutions.
 - Add approximately 10 px of vertical separation between the location and email block.
+- Add the personal motto `I would devote 90% of my time to defining the right problem and the remaining 10% to solving it.` below the social icons.
+- Present the motto as understated small italic text with no attribution. It belongs to the left profile column and should wrap naturally without competing with the name.
 - Do not add artificial top spacing to the stacked mobile layout.
 
 ## Social links
@@ -41,5 +43,6 @@ Refine only the A (`design-previews/weijie`) homepage. Preserve the current typo
 - Confirm there is no horizontal overflow.
 - Confirm the five social links are 30 × 30 px, aligned, monochrome, keyboard-accessible, and point to the intended destinations.
 - Confirm the desktop left profile content begins approximately 20 px below the portrait top while mobile receives no artificial offset.
+- Confirm the motto appears below the social icons, has no Einstein attribution, and wraps without overflow.
 - Confirm every publication image preserves its natural aspect ratio and the media column remains 240 px wide on desktop.
 - Confirm publication filter labels and visible counts are correct.
