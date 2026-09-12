@@ -70,6 +70,17 @@ GitHub Star counts are part of the publication presentation rather than optional
 - AutoControl Arena, ReasoningShield, and CyberEvolver display live counts. The self-replication paper has no linked public code repository and therefore displays no Star count.
 - Counts use Xipeng Qiu's compact formatting: integers below 1,000; one decimal place from 1,000 through 9,999; whole thousands at 10,000 and above.
 
+## Icons and Alignment
+
+Each version preserves its reference site's own icon language rather than sharing a new universal icon bar.
+
+- Version A replaces the current text-only social row with the same structure as Weijie Ma's homepage: email remains textual metadata, followed by 30 px Google Scholar and GitHub image links. Both images occupy a fixed 30 px square alignment box and share a common vertical center.
+- Version B keeps the reference site's text-only identity links. Its Shields.io Star badges remain exactly 1.25 em high, vertically centered after each Code link, with the original one-pixel optical offset.
+- Version C replaces the text-only social row with four 32 px inline SVG links in the original order: GitHub, X, Google Scholar, and LinkedIn. The links point to Changyi's accounts, including `https://www.linkedin.com/in/changyi-li-6445112b3/`.
+- Version C publication buttons receive the same fixed icon box and center alignment used by the reference. PDF, GitHub, and Website buttons use matching 14–16 px inline SVG icons; the live Star group remains inside the GitHub button and shares its baseline.
+- Every icon link receives an accessible name and a visible hover/focus state. Decorative paths are hidden from assistive technology.
+- Alignment is verified at desktop and 375 px mobile widths. Icon centers, label baselines, button heights, badge heights, and wrapped rows must remain visually consistent.
+
 ## Version A: Weijie/Jemdoc Replica
 
 Reference: <https://weijiemax.github.io/>
