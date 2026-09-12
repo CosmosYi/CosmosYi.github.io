@@ -12,9 +12,9 @@ The website biography remains unchanged because it intentionally uses the shorte
 
 ## Approved advisor line
 
-> Advisors: Prof. Xipeng Qiu, Asst. Prof. Xudong Pan, and Prof. Min Yang.
+> Advisors: Asst. Prof. Xudong Pan, Prof. Min Yang, and Prof. Xipeng Qiu.
 
-The line uses the same `Advisors:` pattern as the master's entry, preserves titles and hyperlinks, and places Xipeng Qiu first.
+The line uses the same `Advisors:` pattern as the master's entry, preserves titles and hyperlinks, and follows the homepage advisor order with Xipeng Qiu last.
 
 ## Verification
 
