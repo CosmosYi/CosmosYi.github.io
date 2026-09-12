@@ -48,7 +48,7 @@ body.zh { font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica 
 .pub-venue { margin-bottom:6px; color:#555; font-size:.94em; font-style:italic; font-weight:600; }
 .pub-links { font-size:.92em; line-height:1.7; }
 .pub-links .sep { margin:0 2px; color:#bbb; }
-.pub-links img.gh-stars { position:relative; top:-1px; width:auto; height:1.25em; margin-left:5px; vertical-align:middle; }
+.pub-links img.gh-stars { position:relative; top:-1px; display:inline-block; width:auto; height:1.25em; margin-left:5px; vertical-align:middle; }
 .blog-post-list { margin:0; padding:0; list-style:none; }
 .blog-post-list li { margin-bottom:14px; }
 .blog-post-date { display:inline-block; float:left; width:7em; color:#777; }
