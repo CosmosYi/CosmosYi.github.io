@@ -2,7 +2,7 @@
 * { box-sizing:border-box; }
 html { background:#eee; scroll-behavior:smooth; scroll-padding-top:70px; }
 body { max-width:960px; margin:30px auto; padding:10px 50px 30px; color:#1a1a1a; background:#fff; font-family:Constantia,"Lucida Bright","DejaVu Serif",Georgia,serif; font-size:16px; line-height:1.45; text-align:left; }
-.home-page { padding-top:60px; }
+.home-page,.blog-page { padding-top:60px; }
 a { color:#224b8d; text-decoration:none; }
 a:hover { text-decoration:underline; }
 a:focus-visible,button:focus-visible { outline:2px solid #2c5aa0; outline-offset:3px; }
@@ -22,9 +22,10 @@ h3 { font-size:110%; }
 #navbar .nav-container { display:flex; align-items:center; gap:20px; max-width:960px; margin:0 auto; padding:10px 50px; }
 #navbar a { color:#224b8d; font-weight:600; white-space:nowrap; }
 #navbar a:hover { text-decoration:none; }
-#navbar .nav-brand { padding-bottom:2px; border-bottom:2px solid #224b8d; color:#1a1a1a; }
+#navbar .nav-brand { padding-bottom:2px; border-bottom:2px solid transparent; color:#1a1a1a; }
 #navbar .nav-links { display:flex; align-items:center; gap:20px; }
 #navbar .nav-links a { padding-bottom:2px; border-bottom:2px solid transparent; transition:border-color .2s ease,color .2s ease; }
+#navbar a[aria-current="page"] { color:#1a1a1a; border-bottom-color:#224b8d; }
 #navbar .nav-links a:hover,#navbar .nav-links a:focus-visible { border-bottom-color:#224b8d; }
 #navbar .last-updated { display:flex; align-items:center; margin-left:auto; color:#666; font-size:12px; line-height:1; white-space:nowrap; }
 .nav-toggle { display:none; flex-direction:column; gap:5px; padding:4px; border:0; background:none; cursor:pointer; }
@@ -36,16 +37,16 @@ h3 { font-size:110%; }
 .profile { width:100%; border-collapse:collapse; }
 .profile > tbody > tr > td:first-child { padding-top:20px; padding-right:32px; }
 .profile-photo { display:block; width:200px; height:267px; object-fit:cover; object-position:center top; }
-.name { margin:0 0 12px; padding:0; border:0; font-size:180%; }
-.profile-title { margin:0 0 4px; padding:0; border:0; font-size:110%; line-height:1.4; }
-.meta { margin-bottom:0; line-height:1.55; }
-.contact { margin:10px 0 14px; border-collapse:collapse; }
+.name { margin:0 0 16px; padding:0; border:0; font-size:180%; }
+.profile-title { margin:0 0 8px; padding:0; border:0; font-size:110%; line-height:1.4; }
+.meta { margin-bottom:0; line-height:1.6; }
+.contact { margin:14px 0 16px; border-collapse:collapse; }
 .contact td { padding:0 7px 0 0; line-height:1.45; white-space:nowrap; }
-.profile-icons { display:flex; align-items:center; gap:14px; height:30px; margin-top:8px; }
+.profile-icons { display:flex; align-items:center; gap:14px; height:30px; margin-top:0; }
 .profile-icon { display:inline-flex; align-items:center; justify-content:center; width:30px; height:30px; color:#111; border:0!important; }
 .profile-icon svg { display:block; width:28px; height:28px; fill:currentColor; }
 .profile-icon:hover,.profile-icon:focus-visible { opacity:.65; }
-.motto { max-width:500px; margin:14px 0 0; color:#555; font-size:85%; font-style:italic; line-height:1.45; }
+.motto { max-width:500px; margin:18px 0 0; color:#555; font-size:85%; font-style:italic; line-height:1.45; }
 
 .dated-list { margin:.2em 0 .8em; padding:0; list-style:none; }
 .dated-list li { position:relative; display:flex; align-items:flex-start; gap:12px; margin-top:.7em; padding-left:16px; }
@@ -94,7 +95,7 @@ h3 { font-size:110%; }
 
 @media(max-width:700px){
   body { margin:0; padding:16px 22px 28px; }
-  .home-page { padding-top:70px; }
+  .home-page,.blog-page { padding-top:70px; }
   .topline { justify-content:flex-start; gap:7px 16px; margin-bottom:18px; }
   #navbar .nav-container { position:relative; justify-content:space-between; padding:10px 22px; }
   #navbar .last-updated { display:none; }
