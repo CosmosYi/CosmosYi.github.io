@@ -35,7 +35,7 @@ h3 { font-size:110%; }
 .nav-toggle.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
 
 .profile { width:100%; border-collapse:collapse; }
-.profile > tbody > tr > td:first-child { padding-top:20px; padding-right:32px; }
+.profile > tbody > tr > td:first-child { padding-top:8px; padding-right:32px; }
 .profile-photo { display:block; width:190px; height:254px; object-fit:cover; object-position:center top; }
 .name { margin:0 0 16px; padding:0; border:0; font-size:180%; }
 .profile-title { margin:0 0 8px; padding:0; border:0; font-size:110%; line-height:1.4; }
