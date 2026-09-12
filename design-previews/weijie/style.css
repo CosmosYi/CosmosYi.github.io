@@ -1,7 +1,8 @@
 /* Weijie Ma's single-page Jemdoc structure with Ji Jiaming's publication and honors geometry. */
 * { box-sizing:border-box; }
-html { background:#eee; scroll-behavior:smooth; scroll-padding-top:18px; }
+html { background:#eee; scroll-behavior:smooth; scroll-padding-top:70px; }
 body { max-width:960px; margin:30px auto; padding:10px 50px 30px; color:#1a1a1a; background:#fff; font-family:Constantia,"Lucida Bright","DejaVu Serif",Georgia,serif; font-size:16px; line-height:1.45; text-align:left; }
+.home-page { padding-top:60px; }
 a { color:#224b8d; text-decoration:none; }
 a:hover { text-decoration:underline; }
 a:focus-visible,button:focus-visible { outline:2px solid #2c5aa0; outline-offset:3px; }
@@ -15,7 +16,22 @@ h3 { font-size:110%; }
 .topline { display:flex; justify-content:flex-end; flex-wrap:wrap; gap:8px 18px; margin:0 0 16px; font-size:14px; }
 .topline a { padding-bottom:1px; }
 .topline a[aria-current="page"] { color:#022b6d; border-bottom:1px solid #777; }
-.anchor-section { scroll-margin-top:18px; }
+.anchor-section { scroll-margin-top:70px; }
+
+#navbar { position:fixed; z-index:1000; top:0; left:0; width:100%; border-bottom:1px solid #e0e0e0; background:rgba(255,255,255,.88); box-shadow:0 1px 8px rgba(0,0,0,.04); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; font-size:15px; backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); }
+#navbar .nav-container { display:flex; align-items:center; gap:20px; max-width:960px; margin:0 auto; padding:10px 50px; }
+#navbar a { color:#224b8d; font-weight:600; white-space:nowrap; }
+#navbar a:hover { text-decoration:none; }
+#navbar .nav-brand { padding-bottom:2px; border-bottom:2px solid #224b8d; color:#1a1a1a; }
+#navbar .nav-links { display:flex; align-items:center; gap:20px; }
+#navbar .nav-links a { padding-bottom:2px; border-bottom:2px solid transparent; transition:border-color .2s ease,color .2s ease; }
+#navbar .nav-links a:hover,#navbar .nav-links a:focus-visible { border-bottom-color:#224b8d; }
+#navbar .last-updated { display:flex; align-items:center; margin-left:auto; color:#666; font-size:12px; line-height:1; white-space:nowrap; }
+.nav-toggle { display:none; flex-direction:column; gap:5px; padding:4px; border:0; background:none; cursor:pointer; }
+.nav-toggle span { display:block; width:24px; height:2px; border-radius:2px; background:#1a1a1a; transition:opacity .3s ease,transform .3s ease; }
+.nav-toggle.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+.nav-toggle.open span:nth-child(2) { opacity:0; }
+.nav-toggle.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
 
 .profile { width:100%; border-collapse:collapse; }
 .profile > tbody > tr > td:first-child { padding-right:32px; }
@@ -30,10 +46,10 @@ h3 { font-size:110%; }
 .profile-icon img { display:block; width:30px; height:30px; object-fit:contain; }
 .profile-icon:hover,.profile-icon:focus-visible { opacity:.72; }
 
-.dated-list,.experience-list { margin:.2em 0 .8em; padding:0; list-style:none; }
+.dated-list { margin:.2em 0 .8em; padding:0; list-style:none; }
 .dated-list li { position:relative; display:flex; align-items:flex-start; gap:12px; margin-top:.7em; padding-left:16px; }
 .dated-list li::before { position:absolute; top:.42em; left:1px; width:6px; height:6px; background:#1a1a1a; content:""; }
-.dated-list time { flex:0 0 92px; color:#5f6f52; font-weight:600; font-variant-numeric:tabular-nums; white-space:nowrap; }
+.dated-list time { flex:0 0 92px; color:#555; font-weight:600; font-variant-numeric:tabular-nums; white-space:nowrap; }
 .dated-list span { min-width:0; flex:1 1 auto; }
 
 .publication-controls { display:flex; gap:8px; margin:2px 0 9px; }
@@ -58,11 +74,6 @@ h3 { font-size:110%; }
 .repo-stars { display:inline-flex; align-items:center; gap:2px; margin-left:4px; color:#555; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; font-size:82%; font-variant-numeric:tabular-nums; white-space:nowrap; vertical-align:1px; }
 .repo-stars__icon { color:#b8860b; }
 
-.experience-list li { display:flex; align-items:flex-start; justify-content:space-between; gap:22px; margin-top:14px; }
-.experience-list div { min-width:0; flex:1 1 auto; }
-.experience-list strong,.experience-list span { display:block; }
-.experience-list span { margin-top:2px; color:#666; font-size:90%; }
-.experience-list time { flex:0 0 225px; color:#666; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; font-size:88%; line-height:1.45; text-align:right; font-variant-numeric:tabular-nums; }
 .honors-list time { flex-basis:92px; }
 .service-list time { flex-basis:92px; }
 .footer { margin-top:4em; padding-top:.45em; color:#888; border-top:1px solid #c0c0c0; font-size:small; text-align:right; }
@@ -81,7 +92,14 @@ h3 { font-size:110%; }
 
 @media(max-width:700px){
   body { margin:0; padding:16px 22px 28px; }
+  .home-page { padding-top:70px; }
   .topline { justify-content:flex-start; gap:7px 16px; margin-bottom:18px; }
+  #navbar .nav-container { position:relative; justify-content:space-between; padding:10px 22px; }
+  #navbar .last-updated { display:none; }
+  .js .nav-toggle { display:flex; }
+  .js #navbar .nav-links { position:absolute; top:100%; left:0; display:none; align-items:stretch; width:100%; padding:8px 22px 12px; border-bottom:1px solid #e0e0e0; background:#fff; box-shadow:0 5px 12px rgba(0,0,0,.06); }
+  .js #navbar .nav-links.open { display:flex; flex-direction:column; gap:5px; }
+  .js #navbar .nav-links a { padding:7px 0; }
   .profile,.profile > tbody,.profile > tbody > tr,.profile > tbody > tr > td { display:block; width:100%; }
   .profile > tbody > tr > td:first-child { padding-right:0; }
   .profile > tbody > tr > td:last-child { padding-top:15px; }
@@ -92,8 +110,6 @@ h3 { font-size:110%; }
   .publication-media { width:100%; margin:0 0 13px; }
   .publication-media img { width:100%; height:auto; aspect-ratio:16/9; }
   .publication-details { margin:0; }
-  .experience-list li { display:block; margin-top:17px; }
-  .experience-list time { display:block; margin-top:5px; text-align:left; }
   .dated-list li { gap:9px; padding-left:14px; }
   .dated-list time { flex-basis:84px; }
   .post-list li { grid-template-columns:1fr; gap:4px; }
