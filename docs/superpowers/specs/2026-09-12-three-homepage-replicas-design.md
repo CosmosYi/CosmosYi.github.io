@@ -58,6 +58,18 @@ All three versions use the same facts so the comparison is visual rather than ed
 
 Advisor names, institutions, papers, PDFs, code repositories, and project pages will retain hyperlinks.
 
+## Live GitHub Star Counts
+
+GitHub Star counts are part of the publication presentation rather than optional decoration.
+
+- Version B reproduces Zhang Hanbo's current implementation exactly: a Shields.io `github/stars` image immediately follows each `[Code]` link, using `style=flat-square`, `label=★`, `labelColor=2053AB`, `color=555`, and `cacheSeconds=21600`.
+- Versions A and C use the data-loading strategy from Xipeng Qiu's homepage: an embedded fallback value when available, then a one-hour `localStorage` cache, then the public GitHub repository API.
+- A shared `star-counter.js` fills elements identified by `data-repo="owner/repository"`. A failed request leaves the fallback count visible and never blocks the rest of the page.
+- Version A renders the count as compact inline text beside the bracketed Code link so the Jemdoc layout remains unchanged.
+- Version C renders the count inside the existing GitHub action button, matching the button geometry and color system already used by the Micah-based layout.
+- AutoControl Arena, ReasoningShield, and CyberEvolver display live counts. The self-replication paper has no linked public code repository and therefore displays no Star count.
+- Counts use Xipeng Qiu's compact formatting: integers below 1,000; one decimal place from 1,000 through 9,999; whole thousands at 10,000 and above.
+
 ## Version A: Weijie/Jemdoc Replica
 
 Reference: <https://weijiemax.github.io/>
