@@ -160,3 +160,7 @@ h3 { font-size:110%; }
   .dated-list li { display:grid; grid-template-columns:92px minmax(0,1fr); }
   .dated-list time { width:auto; }
 }
+
+/* Compact five-area overview for the NUWA report thumbnail. */
+.publication-media .risk-area-thumbnail { display:flex; flex-wrap:wrap; justify-content:center; gap:4px; width:100%; }
+.risk-area-thumbnail span { display:block; flex:0 0 calc((100% - 8px)/3); aspect-ratio:.76; background-image:url('../../images/nuwa-risk-areas.png'); background-repeat:no-repeat; background-size:510% 194%; border-radius:5px; }
