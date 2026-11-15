@@ -1,0 +1,8 @@
+/* Language navigation follows the existing restrained academic design. */
+#navbar .language-switch { display:inline-flex; align-items:center; justify-content:center; min-width:36px; padding:3px 7px; border:1px solid #c5d0e0; border-radius:4px; font-family:inherit; font-size:13px; line-height:1.25; }
+#navbar .language-switch:hover { color:#fff; border-color:#224b8d; background:#224b8d; }
+#navbar .last-updated { margin-left:0; }
+#navbar .language-switch { margin-left:auto; }
+html[lang="zh-CN"] body { font-family:Constantia,Georgia,"Songti SC","Noto Serif CJK SC",serif; line-height:1.65; }
+html[lang="zh-CN"] .paper-title, html[lang="zh-CN"] .paper-authors { font-family:Constantia,"Lucida Bright",Georgia,"Songti SC",serif; }
+@media(max-width:700px) { #navbar .language-switch { margin-left:auto; } #navbar .nav-toggle { order:2; } }
