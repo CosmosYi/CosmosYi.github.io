@@ -160,28 +160,3 @@ h3 { font-size:110%; }
   .dated-list li { display:grid; grid-template-columns:92px minmax(0,1fr); }
   .dated-list time { width:auto; }
 }
-
-/* Project and dataset marks in the NUWA publication thumbnail. */
-.nuwa-resource-preview {
-  display:grid;
-  grid-template-columns:minmax(0,1fr) 62px;
-  align-items:center;
-  width:100%;
-  max-width:280px;
-  margin:auto;
-}
-.nuwa-resource-preview a {
-  display:grid;
-  place-items:center;
-  min-height:62px;
-  padding:0 9px;
-}
-.nuwa-resource-preview a + a { border-left:1px solid #dce3e7; }
-.publication-media .nuwa-resource-preview img {
-  width:100%;
-  height:auto;
-  background:transparent;
-  border-radius:0;
-  box-shadow:none;
-}
-.nuwa-resource-preview a + a img { max-width:43px; }
